@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    color: darkslategrey;
+    font-family: arial, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: "Audiowide", sans-serif;
+}
+
+h2 {
+    background-color: lightskyblue;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+h1, h2, a {
+    color: darkblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+p#copy {
+    font-style: italic;
+    font-weight: bold;
+}
