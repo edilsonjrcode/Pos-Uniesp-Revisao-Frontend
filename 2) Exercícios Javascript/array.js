@@ -1,4 +1,4 @@
-min = (array) => {
+const min = (array) => {
   minNum = array[0];
 
   for (item of array) {
@@ -8,7 +8,7 @@ min = (array) => {
   return minNum;
 };
 
-max = (array) => {
+const max = (array) => {
   minNum = array[0];
 
   for (item of array) {
@@ -18,7 +18,7 @@ max = (array) => {
   return minNum;
 };
 
-range = (comprimento, ultimo, intervalo) => {
+const range = (comprimento, ultimo, intervalo) => {
   resultado = [];
 
   if (comprimento && ultimo == undefined && intervalo == undefined) {
@@ -38,7 +38,7 @@ range = (comprimento, ultimo, intervalo) => {
   return resultado;
 };
 
-zip = (...arrays) => {
+const zip = (...arrays) => {
     result = [];
     for (indice = 0; indice < arrays.length; indice++) {
       values = [];
@@ -49,7 +49,7 @@ zip = (...arrays) => {
     return result;
 };
 
-uniq = (array) => {
+const uniq = (array) => {
   arrayUnico = [];
   for (element of array)
     if (!(element in arrayUnico)) {
@@ -58,7 +58,7 @@ uniq = (array) => {
   return sortNum(arrayUnico);
 };
 
-sortNum = (array) => {
+const sortNum = (array) => {
   ordenado = array.sort((a, b) => a - b);
   return ordenado;
 };

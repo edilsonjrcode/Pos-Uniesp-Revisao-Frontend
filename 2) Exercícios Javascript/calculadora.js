@@ -1,4 +1,4 @@
-calculadora = (operador, numero1, numero2) => {
+const calculadora = (operador, numero1, numero2) => {
     switch (operador) {
       case '+':
         return parseInt(numero1) + parseInt(numero2);

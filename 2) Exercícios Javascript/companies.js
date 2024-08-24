@@ -18,7 +18,7 @@ const companies = [
 
 companies.forEach(company => (company['kind'] = "Internet company"))
 
-function show(companies) {
+const show = (companies) => {
 
   const maxNameLength = Math.max(...companies.map(company => company.name.length));
   

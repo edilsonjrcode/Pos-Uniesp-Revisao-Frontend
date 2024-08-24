@@ -1,4 +1,4 @@
-checarTriangulo = (ladoA, ladoB, ladoC) => {
+const checarTriangulo = (ladoA, ladoB, ladoC) => {
   if (
     ladoA >= ladoB + ladoC ||
     ladoB >= ladoC + ladoA ||

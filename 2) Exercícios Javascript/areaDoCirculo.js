@@ -1,4 +1,4 @@
-areaDoCirculo = (raio) => {
+const areaDoCirculo = (raio) => {
   return Math.PI * (raio ** 2);
 }
 
