@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form com JS</title>
+    <link rel="stylesheet" href="/3) Form/style.css">
+</head>
+<body>
+    
+    <h1>Busca Cep</h1>
+
+    <form action="">
+
+        
+        <label for="cep">Cep</label>
+        <input type="text" name="cep" id="cep">
+        <span id="erroCep"></span>
+
+        <label for="rua">Rua</label>
+        <input type="text" name="rua" id="rua">
+
+        <label for="Número">Número</label>
+        <input type="text" name="" id="">
+
+        <label for="bairro">Bairro</label>
+        <input type="text" name="bairro" id="bairro">
+
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade">
+
+        <label for="estado">Estado</label>
+        <input type="text" name="estado" id="estado">
+
+        <button type="button" onclick="insertResults()">Buscar</button>
+
+    </form>
+
+    <div id="results">
+        <p id="cepResult"></p>
+    </div>
+
+    <script src="/3) Form/script.js"></script>
+
+</body>
+
+</html>
