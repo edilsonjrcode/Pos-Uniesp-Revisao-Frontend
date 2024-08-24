@@ -16,19 +16,15 @@ const companies = [
   },
 ];
 
-
 companies.forEach(company => (company['kind'] = "Internet company"))
 
-show = (companies) => {
+function show(companies) {
 
-    MAX_LENGTH = ''
-
-    companies.forEach(company => {
-
-        console.log(company['name'] +" "+ company['founded'])
-
-    })
-
+  const maxNameLength = Math.max(...companies.map(company => company.name.length));
+  
+  return companies
+    .map(company => company.name.padEnd(maxNameLength + 3, '.') + company.founded)
+    .join('\n');
 }
 
-show(companies)
+console.log(show(companies))
